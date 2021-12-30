@@ -3,33 +3,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 170px;
+  min-width: 270px;
 }
 .container {
-  width: 90vw;
-  max-width: 380px;
-  min-width: 150px;
-  height: 100px;
-  border: 2px solid white;
-  border-radius: 6px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 7px;
+  border: 2px solid #fff;
+  width: clamp(250px, 90vw, 380px);
+  padding: 20px 0;
 }
-.container div {
-  font-weight: 600;
-  font-size: 35px;
+.container .horas {
+  font-size: 30px;
   color: #fff;
-  font-size: clamp(16px, 10vw, 35px);
+  font-weight: 600;
 }
-
-
-/* @media only screen and (max-width: 400px) {
-  .container {
-    width: 90vw;
-    min-width: 240px;
-  }
-  .container div {
-    font-size: clamp(16px, 10vw, 35px);
-  }
-} */
