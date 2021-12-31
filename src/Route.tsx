@@ -1,7 +1,7 @@
-import { Relogio } from './pages/Relegio';
+import { Relogio } from './pages/Relogio';
 
 export function Route() {
   return (
     <Relogio />
-  )
+  );
 }
