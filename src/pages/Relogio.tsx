@@ -6,9 +6,10 @@ export function Relogio() {
   const [ tick, setTick ] = useState(new Date().toLocaleTimeString());
 
   useEffect(() => {
-    setInterval(() => {
+    const unsubscribe = setInterval(() => {
       setTick(new Date().toLocaleTimeString());
     },1000);
+    clearInterval(unsubscribe);
   }, []);
 
   return(
